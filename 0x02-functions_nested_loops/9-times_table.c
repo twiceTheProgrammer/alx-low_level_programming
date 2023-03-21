@@ -6,16 +6,16 @@
  */
 void times_table(void)
 {
-	int counter = 0;
-	int multiple = 0;
+	int counter;
+	int multiple;
 	int result;
 
-	while ((counter <= 9) && (multiple <= 9))
+	for (counter = 0; counter < 10; counter++)
 	{
-		while (multiple <= 9)
+		for (multiple = 0; multiple < 10; multiple++)
 		{
 			result = counter * multiple;
-			if (result == 0)
+			if (multiple == 0)
 				_putchar(result + '0');
 			if (result < 10 && multiple != 0)
 			{
@@ -31,9 +31,7 @@ void times_table(void)
 				_putchar((result / 10) + '0');
 				_putchar((result % 10) + '0');
 			}
-			multiple++;
 		}
 		_putchar('\n');
-		counter++;
 	}
 }
