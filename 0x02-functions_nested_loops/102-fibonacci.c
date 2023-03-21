@@ -13,13 +13,19 @@ int main(void)
 	long int count;
 
 	printf("%ld, %ld, ", first, second);
-	for (count = 2; count < 50; count++)
+	for (count = 2; count <= 50; ++count)
 	{
-		next = first + second;
-		first = second;
-		second = next;
-		printf("%ld, ", next);
+		if (count != 50)
+		{
+			next = first + second;
+			first = second;
+			second = next;
+			printf("%ld, ", next);
+		}
+		else
+	       	{
+			printf("%ld\n", next);
+		}
 	}
-	printf("\n");
 	return (0);
 }
