@@ -12,20 +12,20 @@ int main(void)
 	long int second = 2;
 	long int count;
 
-	printf("%ld, %ld, ", first, second);
-	for (count = 2; count <= 50; ++count)
+	for (count = 1; count <= 50; ++count)
 	{
 		if (count != 50)
 		{
-			next = first + second;
-			first = second;
-			second = next;
-			printf("%ld, ", next);
+			printf("%ld, ", first);
 		}
 		else
 	       	{
-			printf("%ld\n", next);
+			printf("%ld\n", first);
 		}
+
+		next = first + second;
+		first = second;
+		second = next;
 	}
 	return (0);
 }
