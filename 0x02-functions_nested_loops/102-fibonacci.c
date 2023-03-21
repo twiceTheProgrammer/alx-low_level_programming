@@ -7,21 +7,17 @@
  */
 int main(void)
 {
-	int next = 0;
+	int next;
 	int first = 1;
 	int second = 2;
 	int count;
 
-	for (count = 0; count < 50; count++)
+	printf("%d, %d, ", first, second);
+	for (count = 2; count < 50; count++)
 	{
-		if (count == 1)
-			next = count;
-		else
-		{
-			next = first + second;
-			first = second;
-			second = next;
-		}
+		next = first + second;
+		first = second;
+		second = next;
 		printf("%d, ", next);
 	}
 	printf("\n");
