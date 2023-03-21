@@ -19,10 +19,9 @@ int main(void)
 			printf("%ld, ", first);
 		}
 		else
-	       	{
+		{
 			printf("%ld\n", first);
 		}
-
 		next = first + second;
 		first = second;
 		second = next;
