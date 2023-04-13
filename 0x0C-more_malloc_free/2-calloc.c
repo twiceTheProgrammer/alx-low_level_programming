@@ -6,7 +6,7 @@
  * *_calloc - allocate mem for an array
  * @nmemb: elements
  * @size: size of each element
- * 
+ *
  * Return: pointer
  */
 
